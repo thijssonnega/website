@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+}
+
+* {
+  @apply border-border;
+}
+
+a {
+  @apply transition-colors;
+}
+
+.prose h2,
+.prose h3 {
+  @apply mt-8 text-primary;
+}
+
+.prose p {
+  @apply mb-4 leading-7 text-foreground/85;
+}
